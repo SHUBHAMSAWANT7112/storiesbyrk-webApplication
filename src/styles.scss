@@ -988,37 +988,10 @@ button:not([disabled]):hover,
   max-width: 23.75rem;
 }
 
-.card-gallery {
-  width: 100%;
-  height: 100%;
-  min-height: 15.625rem;
-  max-height: 30rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-.card-gallery img {
-  width: 100%;
-  min-height: 15.625rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: transform 350ms ease-in-out;
-}
-.card-gallery img:not([disabled]):hover {
-  transform: scale(1.1);
-}
-
-.card-image {
-  width: 100%;
-  height: 100%;
-  min-height: 15rem;
-  max-height: 33.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  padding-inline: 1.25rem;
+.gallery-sec{
+  .gallery-img{
+    max-height: 350px;
+  }
 }
 @media screen and (min-width: 36rem) {
   .card-image {
@@ -1271,7 +1244,7 @@ button:not([disabled]):hover,
 .card-blog-body {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  /*gap: 0.5rem; */
 }
 .card-blog-body .blog-title {
   color: hsl(231, 37%, 35%);
@@ -3110,8 +3083,8 @@ button:not([disabled]):hover,
   height: 100%;
 }
 .copules .lovely-couple {
-  /* background: url(../images/lovely-couple/lovely-couple.png) no-repeat center center/cover; */
   padding: 2rem 0.5rem 4rem;
+  padding-bottom: 0 !important;
   position: relative;
 }
 @media screen and (min-width: 62rem) {
@@ -3125,7 +3098,6 @@ button:not([disabled]):hover,
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  gap: 1rem;
 }
 .copules .lovely-couple-details .icon {
   width: 5rem;
@@ -3419,7 +3391,7 @@ button:not([disabled]):hover,
  LOVESTORY-SECTION START
 */
 .lovestory {
-  padding: 7.5rem 0.5rem;
+  padding: 2rem 0.5rem;
 }
 @media screen and (min-width: 62rem) {
   .lovestory {
@@ -6846,6 +6818,10 @@ bottom: 0;
         
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+  .nav-list{
+    a{font-size: 0.7rem;padding-left: 0;}
+   
+  }
   .gallery-sec .sticky-slider{
     position: static !important;
     height: auto;
